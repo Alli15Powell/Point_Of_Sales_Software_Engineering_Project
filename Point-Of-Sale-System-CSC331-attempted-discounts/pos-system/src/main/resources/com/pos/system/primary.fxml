@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pos.system.PrimaryController">
+   <children>
+      <Label alignment="CENTER" layoutX="202.0" layoutY="99.0" prefHeight="53.0" prefWidth="496.0" text="Point of Sale System" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="153.0" prefHeight="143.0" prefWidth="762.0" text="By Clicking &quot;Start&quot;, you agree that you are who you state you are and your intentions to use this system is in line with the intended use of the system. Additionally, you agree to the imaginary terms and conditions. Rykovs-Right-Arm is the sole creator and all acknowledgements and credit should be referred to them. Permission is needed to reuse any part of this program. &#10;&#10;Acknowledgements&#10;This project was created under one person. A last-ditch effort to save a person's evaluation from the inevitable. The current system will replace the old system once significant development time has been invested into it.&#10;" wrapText="true" />
+      <CheckBox fx:id="confirm" layoutX="376.0" layoutY="300.0" mnemonicParsing="false" onAction="#confirm_TOS" text="I understand. Let's start." />
+      <Button fx:id="primaryButton" alignment="CENTER" disable="true" layoutX="429.0" layoutY="329.0" onAction="#switchToSecondary" text="Start" />
+   </children>
+</AnchorPane>
